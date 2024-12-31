@@ -7,7 +7,6 @@
 
 ```
 yarn
-
 ```
 
 ---
@@ -16,7 +15,6 @@ yarn
 ##### In src/App.tsx:
 
 ```js
-
 function App() {
 
   useEffect(() => {
@@ -29,7 +27,6 @@ function App() {
       // html elements ....
   )
 }
-
 ```
 ---
 
@@ -39,8 +36,11 @@ function App() {
 
 ```
 yarn build
-
 ```
+
+---
+## Preview
+![Preview Screen](https://github.com/ivanlee-coding/.github-images/blob/main/assets/forever-timer.png "Preview")
 
 ---
 
