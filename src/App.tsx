@@ -35,37 +35,40 @@ function App() {
 
     <div className="container-fluid d-flex bg-dark vh-100">
 
+
+
       <div className="row align-items-center vw-100">
 
-      <div className="col-4 d-flex justify-content-end fs-2 fw-bold text-light">
-          {`${timer.year}年`}
-        </div>
+         <div className="col-2 d-flex justify-content-end fs-2 fw-light text-light">
+            {`${timer.year}年`}
+          </div>
 
-        <div className="col-auto d-flex justify-content-end fs-2 fw-bold text-light">
-          {`${timer.day}天`}
-        </div>
+          <div className="col-auto d-flex justify-content-end fs-4 fw-light text-light">
+            {`${timer.day}天`}
+          </div>
 
-        <div className="col-auto d-flex justify-content-end fs-2 fw-bold text-light">
-          {`${timer.hour}時`}
-        </div>
+          <div className="col-auto d-flex justify-content-end fs-4 fw-light text-light">
+            {`${timer.hour}時`}
+          </div>
 
-        <div className="col-auto d-flex justify-content-end fs-2 fw-bold text-light">
-          {`${timer.min}分`}
-        </div>
+          <div className="col-auto d-flex justify-content-end fs-4 fw-light text-light">
+            {`${timer.min}分`}
+          </div>
 
-        <motion.div className="col-auto d-inline fs-1 fw-bold text-warning p-0"
-          initial={{ opacity: 0, scale: 5 }}
-          animate={{ opacity: 1, scale: 0.9 }}
-          transition={{ duration: 10.0 }}
-        >         
-          {`${timer.sec}`}
-        </motion.div>
+          <motion.div className="col-auto d-inline fs-1 fw-bold text-warning p-0"
+            initial={{ opacity: 0, scale: 5 }}
+            animate={{ opacity: 1, scale: 0.9 }}
+            transition={{ duration: 10.0 }}
+          >         
+            {`${timer.sec}`}
+          </motion.div>
 
-        <div className="col-auto d-flex justify-content-end fs-5 fw-bold text-danger">
-          {`${timer.milliseconds}`}
-        </div>
+          <div className="col-auto d-flex justify-content-end fs-5 fw-bold text-danger">
+            {`${timer.milliseconds}`}
+          </div>
 
       </div>
+
 
     </div>
 
