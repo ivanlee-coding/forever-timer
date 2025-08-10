@@ -88,7 +88,7 @@ function convertDiffToHumanDate(count: number) {
 
 
   const year = Math.floor(count / yearUnit).toString();
-  const day = Math.floor(count / dayUnit - 365).toString();
+  const day = Math.floor( (count / dayUnit) % 365).toString();
   let hour = Math.floor(count%dayUnit / hourUnit).toString();
   let min = Math.floor(count%dayUnit%hourUnit / minUnit).toString();
   let sec = Math.floor(count%dayUnit%hourUnit%minUnit / secUnit).toString();
